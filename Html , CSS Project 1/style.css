@@ -1,0 +1,92 @@
+.orange-card{
+    background-color: #E28525;
+}
+
+.lightgreen-card{
+    background-color: #016972;
+}
+
+.darkgreen-card{
+    background-color: #00403F;
+}
+
+body{
+    margin: 0px;
+}
+
+.card p{
+    opacity: 0.5;
+    font-family: "Lexend Deca", serif;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.card{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 100%; */
+    width: 100%;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    max-width: 910px;
+    /* align-items: center;
+    justify-content: center; */
+    color: aliceblue;
+    /* padding: 1.5rem;/ */
+    margin: 1.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 64px;
+    height: 40px;
+}
+
+.card a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 90px;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.card h2{
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+@media (max-width : 800px) {
+
+     .card-container{
+        flex-direction: column;
+     }
+     .card a{
+        background-color: white;
+     }
+     .orange-card a{
+        color: #E28525;
+     }
+     .lightgreen-card a{
+        color: #016972;
+     }
+     .darkgreen-card a{
+        color: #00403F;
+     }
+     .card{
+        width: unset;
+     }
+}
